@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="F:\portfolio\portfolio.css">
+</head>
+<body>
+	<div class="background">
+		<div class="nav">
+			<a class="a active" href="#">HOME</a>
+			<a class="b" href="#">ABOUT ME</a>
+			<a class="c" href="#">DETAILS</a>
+			<a class="d" href="#">CONTACT ME</a>
+		</div>
+		<div class="content">
+			<div class="home">
+				<h1>MADHUMIDHA J</h1>
+				<h3>Junior Full Stack Developer</h3>
+			</div>
+			<div class="aboutme">
+				<p><b>Hello</b><br>
+					I am <b>Madhumidha.</b><br>
+					Born and bought up in Mettupalayam, a small town in Coimbatore,Tamilnadu.My parents are Farmers and I am their only child.I completed my SSLC in a private school in Mettupalayam.HSC in karamadai.I am currently persuing my bacholers degree in the field of Electical and Electronics Engineering at KPR Institute of Engineering and Technology.<br><br>
+					I like playing football.I represent my school football team and won various matches.I was also a team leader for sport house.I actively take part in volunteer activites for various function held in our collage.<br><br>
+					I am good team player and a Responsible person.I do my work with full dedication.I don't quit things easily and do things with perfection.<br><br>
+					<b>Thank You!!</b></p>
+			</div>
+			<div class="contact">
+				<h2>CONTACT DETAILS</h2><br>
+				<p><b>Mobile no:</b> 6380062553, 9578144513<br>
+				<b>Email id :</b> madhumidha2911@gmail.com<br>
+				<b>Linkedin :</b> Madhumidha Jayaraman<br>
+				<b>Skype    :</b> Madhumidha Jayaraman<br>
+				<b>Address  :</b> 3/497 Edayar palayam,
+						   Mettupalayam,
+						   Coimbatore,
+						   Tamilnadu-641301.</p>
+				<h2>SKILLS</h2><br>
+				<p><b>Technical Skills:</b> Java, Python, HTML5, CSS3, Javascript & JQuery<br>
+				<b>InterPersonal Skills:</b>Team Player, Responsible, LeaderShip.<br>
+				<b>IntraPersonal Skills:</b>Self Motivated, HardWorking, Optimistic.<br>
+				<h2>Qualification</h2><br>
+				<table>
+					<tr>
+						<th>Education</th>
+						<th>Institution</th>
+						<th>Percentage/CGPA</th>
+						<th>Year of Passing</th>
+						<th>City</th>
+					</tr>
+					<tr>
+						<td><b>BE EEE</b></td>
+						<td>KPR Institute of Engineering and Technology</td>
+						<td>8.02 CGPA</td>
+						<td>2021</td>
+						<td>Coimbatore</td>
+					</tr>
+					<tr>
+						<td><b>HSC</b></td>
+						<td>SVGV Matriculation Higher Secondary School</td>
+						<td>83.91%</td>
+						<td>2017</td>
+						<td>Coimbatore</td>
+					</tr>
+					<tr>
+						<td><b>SSLC</b></td>
+						<td>LEF Christian Matriculation School</td>
+						<td>97%</td>
+						<td>2015</td>
+						<td>Coimbatore</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contactme">
+				<div class="contactform">
+					<form action="index.html" method="post">
+						<input type="text" name="" class="inputtext" placeholder="Enter your name">
+						<input type="text" name="" class="inputtext" placeholder="Enter your mail Id">
+						<textarea cols="4" rows="6" class="inputmessage" placeholder="your message...:)"></textarea>
+						<input type="button" name="" class="submitbutton" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<script type="text/javascript" src="F:\portfolio\jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			var selected =$(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+		var $a=$('.a'),
+		$b=$('.b'),
+		$c=$('.c'),
+		$d=$('.d'),
+		$home=$('.home'),
+		$aboutme=$('.aboutme'),
+		$contact=$('.contact'),
+		$contactme=$('.contactme');
+
+		$b.click(function(){
+			$aboutme.fadeIn();
+			$home.fadeOut();
+			$contact.fadeOut();
+			$contactme.fadeOut();
+		});
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutme.fadeOut();
+			$contact.fadeOut();
+			$contactme.fadeOut();
+		});
+		$c.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$contact.fadeIn();
+			$contactme.fadeOut();
+		});
+		$d.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$contact.fadeOut();
+			$contactme.fadeIn();
+		});
+	});
+</script>
+</body>
+</html>
